@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>jobxa.com</title>
+    <link rel="stylesheet" href="home.css">
+    <!-- Link to Google Fonts for stylish font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Link to Font Awesome for user icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="logo">jobxa.com</h1>
+            <div class="login">
+                <i class="fa fa-user"></i> <!-- User Icon -->
+                <a href="#" class="login-link">Login</a> <!-- Append tag, link to be updated later -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="main-nav">
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="nav-link">Jobs</a>
+                <div class="dropdown-content">
+                    <a href="#">Top Jobs</a>
+                    <a href="#">High Paying Jobs</a>
+                    <a href="#">Skill Matching Jobs</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">Resources</a>
+                <div class="dropdown-content">
+                    <a href="#">HTML</a>
+                    <a href="#">CSS</a>
+                    <a href="#">JavaScript</a>
+                    <a href="#">Python</a>
+                    <a href="#">C-Programming</a>
+                    <a href="#">PHP</a>
+                    <a href="#">WordPress</a>
+                    <a href="#">Java</a>
+                    <a href="#">MongoDB</a>
+                    <a href="#">Linux</a>
+                    <a href="#">Git and GitHub</a>
+                    <a href="#">Practice Sites</a>
+                </div>
+            </li>
+            <li><a href="#" class="nav-link">Hear from the Professionals</a></li>
+            <li><a href="#" class="nav-link">Your Progress</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="welcome-section">
+            <h2 class="welcome-message">Welcome to jobxa.com</h2>
+            <br>
+            <p class="caption">Job and resources problem in IT field? We are the solution</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 jobxa.com. All rights reserved.</p>
+    </footer>
+
+    <!-- Script for dynamic welcome message -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const textElement = document.querySelector('.welcome-message');
+            const text = "Welcome to jobxa.com";
+            let index = 0;
+            let forward = true;
+
+            function typeEffect() {
+                if (forward) {
+                    textElement.innerHTML = text.slice(0, index++);
+                    if (index > text.length) forward = false;
+                } else {
+                    textElement.innerHTML = text.slice(0, index--);
+                    if (index === 0) forward = true;
+                }
+                setTimeout(typeEffect, 100); // Adjusted typing speed to be faster
+            }
+
+            typeEffect();
+        });
+    </script>
 </body>
 </html>
