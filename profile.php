@@ -162,6 +162,8 @@ $result = $con->query($sql);
       <ul>
       <nav class="main-nav">
         <ul>
+            
+          <li><a href="home.html" class="nav-link">Home</a></li>
             <li class="dropdown">
                 <a href="#" class="nav-link">Jobs</a>
                 <div class="dropdown-content">
@@ -190,9 +192,9 @@ $result = $con->query($sql);
             </li>
             <li><a href="professionals.html" class="nav-link">Hear from the Professionals</a></li>
             <li><a href="Progress.html" class="nav-link">Your Progress</a></li>
-        <li><a href="#">My Profile</a></li>
+        <!-- <li class="nav-link"><a href="profile.php" style=text-decoration:none;color:white>My Profile</a></li> -->
         
-        <li><a href="#">Logout</a></li>
+        <li class="nav-link"><a href="home.html"style=text-decoration:none;color:white>Logout</a></li>
       </ul>
     </nav>
   </header>
