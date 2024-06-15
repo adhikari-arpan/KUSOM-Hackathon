@@ -122,9 +122,97 @@ if(isset($_POST['title'])){
         .success-message p {
             margin: 10px 0;
         }
-    </style>
+        /* Navigation styles */
+.main-nav {
+    background-color: #3C3C3C; /* Dark gray for navigation */
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1E1E1E; /* Dark background */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #3600B4; /* Vivid violet-blue for hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+</style>
 </head>
 <body>
+
+<nav class="main-nav">
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="nav-link">Jobs</a>
+                <div class="dropdown-content">
+                    <a href="Brousejob.php">Browse job</a>
+                    <a href="jobpost.php">Post job</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">Resources</a>
+                <div class="dropdown-content">
+                    <a href="html.html">HTML</a>
+                    <a href="css.html">CSS</a>
+                    <a href="javascript.html">JavaScript</a>
+                    <a href="python.html">Python</a>
+                    <a href="c.html">C-Programming</a>
+                    <a href="php.html">PHP</a>
+                    <a href="wordpress.html">WordPress</a>
+                    <a href="java.html">Java</a>
+                    <a href="mongodb.html">MongoDB</a>
+                    <a href="Linux.html">Linux</a>
+                    <a href="Github.html">Git and GitHub</a>
+                    <a href="Android.html">Android Development</a>
+                    <a href="Angular.html">Angular</a>
+                    <a href="Practice.html">Practice Sites</a>
+                </div>
+            </li>
+            <li><a href="professionals.html" class="nav-link">Hear from the Professionals</a></li>
+            <li><a href="Progress.html" class="nav-link">Your Progress</a></li>
+        </ul>
+    </nav>
     <form action="jobpost.php" method="POST">
         <input type="text" name="title" placeholder="Enter title"><br>
         <textarea name="content" placeholder="Enter content"></textarea><br>
