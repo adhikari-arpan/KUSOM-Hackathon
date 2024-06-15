@@ -32,6 +32,59 @@ $result = $con->query($sql);
   <title>Jobxa - User Profile</title>
  <link rel="stylesheet" href="profile.css">
  <style>
+  /* Navigation styles */
+.main-nav {
+    background-color: #3C3C3C; /* Dark gray for navigation */
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1E1E1E; /* Dark background */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #3600B4; /* Vivid violet-blue for hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
   body{
     background-image:('sandesh.png');
     background-repeat:no-repeat;
@@ -59,9 +112,8 @@ $result = $con->query($sql);
             <li class="dropdown">
                 <a href="#" class="nav-link">Jobs</a>
                 <div class="dropdown-content">
-                    <a href="jobstop.html">Top Jobs</a>
-                    <a href="jobshighpaying.html">High Paying Jobs</a>
-                    <a href="jobsskillmatching.html">Skill Matching Jobs</a>
+                    <a href="Brousejob.php">Browse Job</a>
+                    <a href="jobpost.php">Post job</a>
                 </div>
             </li>
             <li class="dropdown">
