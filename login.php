@@ -48,7 +48,7 @@ if(isset($_POST['name'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Travel Form</title>
+    <title>Welcome to profile form</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
 </head>
@@ -71,7 +71,7 @@ if(isset($_POST['name'])){
             <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Add your bio"></textarea>
             <textarea name="skills" id="skill" cols="30" rows="10" placeholder="Add your skills"></textarea>
             <button class="btn">Submit</button> 
-            <button class="btn2"><a href="profile.html">Profile</a></button>
+            <button class="btn2"><a href="profile.php">Profile</a></button>
         </form>
     </div>
     <script src="index.js"></script>
