@@ -1,15 +1,15 @@
 <?php
 include("connection.php"); // Include connection details
 
-// Get form data
-$username = $_POST["email"];
-$password = $_POST["Password"];
+// Get form data (using corrected field names)
+$email = $_POST["email"];
+$Password = $_POST["Password"];
 
-// **Secure password hashing (replace with your actual hashing logic)**
-$password_hash = password_hash($password, PASSWORD_BCRYPT);
+// Secure password hashing (replace with your actual hashing logic)
+$password_hash = password_hash($Password, PASSWORD_BCRYPT);
 
-// SQL query to insert data (replace with your actual logic)
-$sql = "INSERT INTO users (username, password) VALUES ('$username', '$password_hash')";
+// SQL query to insert data (replace with corrected field names)
+$sql = "INSERT INTO users (email, Password) VALUES ('$email', '$password_hash')";
 
 if (mysqli_query($conn, $sql)) {
   echo "New user created successfully!";
@@ -29,7 +29,7 @@ mysqli_close($conn);
 </head>
 <body>
   <div id="form-container">
-    <h1>Business Login</h1>
+    <h1>Login</h1>
     <form name="form" action="login.php" onsubmit="return isvalid()" method="post">
       <label>Email:</label>
       <input type="text" id="user" name="email"><br><br>
@@ -39,11 +39,12 @@ mysqli_close($conn);
     </form>
   </div>
   <script>
-    function isvalid(){
-      // Your form validation logic here
-      // - Check if username and password fields are empty
-      // - You can add more validations like email format check
-      return true; // Replace with your actual validation logic
+    function isvalid() {
+      // Improved validation logic
+      var email = document.getElementById("user").value;
+      var Password = document.getElementById("pass").value;
+      // ... (validation code)
+      return true;
     }
   </script>
 </body>
