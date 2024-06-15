@@ -28,6 +28,10 @@ $result = $con->query($sql);
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            background-color: #F0F0F0; /* Light background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px;
         }
         .container {
             width:100%;
@@ -94,17 +98,23 @@ $result = $con->query($sql);
             color: white;
             text-decoration: none;
         }
-        /* Navigation styles */
+/* Navigation styles */
 .main-nav {
     background-color: #3C3C3C; /* Dark gray for navigation */
     color: #FFFFFF;
     padding: 10px 0;
+    position: fixed; /* Make the navigation bar fixed */
+    top: 0; /* Stick to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays on top of other elements */
 }
 
 .main-nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .main-nav ul li {
@@ -147,6 +157,63 @@ $result = $con->query($sql);
 .dropdown:hover .dropdown-content {
     display: block;
 }
+header img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100px; /* Adjust as needed */
+}
+
+.profile-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.profile-container h1 {
+    color: #333333;
+}
+
+.profile-info, .profile-details {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.profile-info h2, .profile-details h2 {
+    color: #666666;
+}
+
+.profile-info p, .profile-details ul {
+    color: #444444;
+}
+
+.profile-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-details ul li {
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+footer {
+    background-color: #3C3C3C;
+    color: #FFFFFF;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
     </style>
 </head>
 <body>
