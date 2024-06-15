@@ -53,7 +53,6 @@ if(isset($_POST['name'])){
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <!-- <img class="bg" src="bg.jpg" alt="IIT Kharagpur"> -->
     <div class="container">
         <h1>Make your profile </h3>
         <p>Enter your details and submit this  </p>
