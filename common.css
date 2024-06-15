@@ -51,7 +51,10 @@ ul li {
     padding: 10px;
     border-radius: 4px;
     transition: background 0.3s;
+    color: black;
+    
 }
+
 
 ul li:hover {
     background: #ced4da;
