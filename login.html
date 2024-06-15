@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="loginfirst.css">
+</head>
+<body>
+  <div id="form-container">
+    <h1>Login</h1>
+    <form name="form" action="connection.php" onsubmit="return isvalid()" method="post">
+      <label>Email:</label>
+      <input type="text" id="user" name="username"><br><br>
+      <label>Password:</label>
+      <input type="password" id="pass" name="password"><br><br>
+      <input type="submit" id="btn" value="Login" name="submit">
+    </form>
+  </div>
+  <!-- <script>
+    function isvalid() {
+      // Improved validation logic
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      // ... (validation code)
+      return true;
+    }
+  </script> -->
+</body>
+</html>
