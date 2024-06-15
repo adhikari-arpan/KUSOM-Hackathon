@@ -55,7 +55,7 @@ if(isset($_POST['name'])){
 <body>
     <!-- <img class="bg" src="bg.jpg" alt="IIT Kharagpur"> -->
     <div class="container">
-        <h1>Make your CV profile here</h3>
+        <h1>Make your profile </h3>
         <p>Enter your details and submit this  </p>
         <?php
         if($insert == true){
