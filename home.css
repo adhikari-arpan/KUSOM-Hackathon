@@ -30,8 +30,35 @@ header {
   padding: 10px 0;
 }
 
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send the video to the back */
+    overflow: hidden; /* Hide any overflow */
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the whole area without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header {
+    background-color: #1E1E1E; /* Lighter dark gray */
+    color: #FFFFFF;
+    color: #fff;
+    padding: 10px 0;
+}
+
 /* General styles */
 body {
+<<<<<<< HEAD
   font-family: Arial, sans-serif;
   background-color: #1E1E1E; /* Dark charcoal background */
   color: #FFFFFF; /* Primary text color */
@@ -55,13 +82,44 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+=======
+    font-family: Arial, sans-serif;
+    background-color: #1E1E1E; /* Dark charcoal background */
+    color: #FFFFFF; /* Primary text color */
+    line-height: 1.6;
+>>>>>>> 96c430905e1372a023d3ae9ea440382b8c34a23d
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send the video to the back */
+    overflow: hidden; /* Hide any overflow */
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the whole area without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* Header styles */
 header {
+<<<<<<< HEAD
   background-color: #1E1E1E; /* Lighter dark gray */
   color: #FFFFFF;
   padding: 10px 0;
+=======
+    background-color: #1E1E1E; /* Lighter dark gray */
+    color: #FFFFFF;
+    padding: 10px 0;
+>>>>>>> 96c430905e1372a023d3ae9ea440382b8c34a23d
 }
 
 .container{
@@ -72,9 +130,15 @@ header {
   align-items: center;
 }
 .logo {
+<<<<<<< HEAD
   font-size: 24px;
   font-family: 'Lobster', cursive;
   color: #6A00FF; /* Deep purple accent */
+=======
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    color: #6A00FF; /* Deep purple accent */
+>>>>>>> 96c430905e1372a023d3ae9ea440382b8c34a23d
 }
 
 .login {
@@ -88,9 +152,15 @@ header {
 }
 
 .login .login-link {
+<<<<<<< HEAD
   color: #00FF6A; /* Neon green accent */
   text-decoration: none;
   font-weight: bold;
+=======
+    color: #00FF6A; /* Neon green accent */
+    text-decoration: none;
+    font-weight: bold;
+>>>>>>> 96c430905e1372a023d3ae9ea440382b8c34a23d
 }
 
 .login .login-link:hover {
@@ -99,9 +169,15 @@ header {
 
 /* Navigation styles */
 .main-nav {
+<<<<<<< HEAD
   background-color: #3C3C3C; /* Dark gray for navigation */
   color: #FFFFFF;
   padding: 10px 0;
+=======
+    background-color: #3C3C3C; /* Dark gray for navigation */
+    color: #FFFFFF;
+    padding: 10px 0;
+>>>>>>> 96c430905e1372a023d3ae9ea440382b8c34a23d
 }
 
 .main-nav ul {
@@ -116,9 +192,15 @@ header {
 }
 
 .nav-link {
+<<<<<<< HEAD
   color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
+=======
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+>>>>>>> 96c430905e1372a023d3ae9ea440382b8c34a23d
 }
 
 
@@ -128,6 +210,7 @@ header {
 
 /* Dropdown Menu */
 .dropdown-content {
+<<<<<<< HEAD
   display: none;
   position: absolute;
   background-color: #1E1E1E; /* Dark background */
@@ -150,6 +233,30 @@ header {
 
 .dropdown:hover .dropdown-content {
   display: block;
+=======
+    display: none;
+    position: absolute;
+    background-color: #1E1E1E; /* Dark background */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #3600B4; /* Vivid violet-blue for hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+>>>>>>> 96c430905e1372a023d3ae9ea440382b8c34a23d
 }
 
 /* Main content styles */
@@ -160,6 +267,7 @@ main {
 }
 
 .welcome-section {
+<<<<<<< HEAD
   background-size: cover;
   background-position: center;
   padding: 100px 0;
@@ -172,6 +280,20 @@ main {
   padding: 20px;
   border-radius: 10px;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+=======
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+}
+
+.welcome-message {
+    font-size: 36px;
+    color: #FF6A00; /* Bright orange for emphasis */
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+>>>>>>> 96c430905e1372a023d3ae9ea440382b8c34a23d
 }
 
 @keyframes typing {
@@ -185,6 +307,7 @@ main {
 }
 
 .caption {
+<<<<<<< HEAD
   margin-top: 20px;
   font-size: 18px;
   color: #FFFFFF;
@@ -192,10 +315,20 @@ main {
   display: inline-block;
   padding: 10px;
   border-radius: 10px;
+=======
+    margin-top: 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: rgba(60, 60, 60, 0.7);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+>>>>>>> 96c430905e1372a023d3ae9ea440382b8c34a23d
 }
 
 /* Footer styles */
 footer {
+<<<<<<< HEAD
   background-color: #1E1E1E;
   color: #FFFFFF;
   text-align: center;
@@ -206,6 +339,18 @@ footer {
   margin-top: 20px;
   height: 100px;
   
+=======
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px;
+    height: 100px;
+    
+>>>>>>> 96c430905e1372a023d3ae9ea440382b8c34a23d
 }
 
 button {
@@ -349,6 +494,7 @@ button {
 .welcome-section #linesss{
   font-family: Arial, Helvetica, sans-serif;
 }
+<<<<<<< HEAD
 .main-nav ul li a{
  
     color: #FFFFFF;
@@ -356,3 +502,5 @@ button {
     font-weight: bold;
   
 }
+=======
+>>>>>>> 96c430905e1372a023d3ae9ea440382b8c34a23d
