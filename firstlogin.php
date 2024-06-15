@@ -24,7 +24,7 @@ mysqli_close($conn);
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business Login</title>
+  <title>Login</title>
   <link rel="stylesheet" href="loginfirst.css">
 </head>
 <body>
@@ -39,13 +39,13 @@ mysqli_close($conn);
     </form>
   </div>
   <script>
-    function isvalid() {
-      // Improved validation logic
-      var email = document.getElementById("user").value;
-      var Password = document.getElementById("pass").value;
-      // ... (validation code)
-      return true;
-    }
+    // function isvalid() {
+    //   // Improved validation logic
+    //   var email = document.getElementById("user").value;
+    //   var Password = document.getElementById("pass").value;
+    //   // ... (validation code)
+    //   return true;
+    // }
   </script>
 </body>
 </html>
