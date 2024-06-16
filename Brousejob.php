@@ -32,6 +32,9 @@ $result = $con->query($sql);
     font-family: Arial, sans-serif;
     margin: 0;
     padding-top: 60px;
+    background-image:url('image1.avif');
+    background-repeat:no-repeat;
+    background-size:100%;
         }
         .container {
             width:100%;
@@ -219,6 +222,8 @@ footer {
 <body>
 <nav class="main-nav">
         <ul>
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="php2.php" class="nav-link">Upload Resume</a></li>
             <li class="dropdown">
                 <a href="#" class="nav-link">Jobs</a>
                 <div class="dropdown-content">

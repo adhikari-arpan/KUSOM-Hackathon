@@ -60,6 +60,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image:url('image3.webp');
+    background-repeat:no-repeat;
+    background-size:100%;
 }
 
 .container {
@@ -70,22 +75,26 @@ body {
     width: 100%;
     max-width: 400px;
     text-align: center;
+    color:black;
+    
 }
 
 h1 {
     margin-bottom: 20px;
-    color: #333;
+    color:black;
+
 }
 
 form {
     display: flex;
     flex-direction: column;
+    
 }
 
 label {
     margin-bottom: 10px;
     font-weight: bold;
-    color: #333;
+    color: black;
 }
 
 input[type="file"] {
@@ -145,16 +154,108 @@ button.btn2 a{
     text-decoration:none;
     color:white;
 }
+/* Navigation styles */
+.main-nav {
+    background-color: #3C3C3C; /* Dark gray for navigation */
+    color: #FFFFFF;
+    padding: 10px 0;
+    position: fixed; /* Make the navigation bar fixed */
+    top: 0; /* Stick to the top */
+    width: 100%; /* Full width */
+    z-index: 1000;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1E1E1E; /* Dark background */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #FFFFFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #3600B4; /* Vivid violet-blue for hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 </style>
 </head>
 <body>
+<nav class="main-nav">
+        <ul>
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="php2.php" class="nav-link">Upload Resume</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">Jobs</a>
+                <div class="dropdown-content">
+                    <a href="Brousejob.php">Browse job</a>
+                    <a href="jobpost.php">Post job</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">Resources</a>
+                <div class="dropdown-content">
+                    <a href="html.html">HTML</a>
+                    <a href="css.html">CSS</a>
+                    <a href="javascript.html">JavaScript</a>
+                    <a href="python.html">Python</a>
+                    <a href="c.html">C-Programming</a>
+                    <a href="php.html">PHP</a>
+                    <a href="wordpress.html">WordPress</a>
+                    <a href="java.html">Java</a>
+                    <a href="mongodb.html">MongoDB</a>
+                    <a href="Linux.html">Linux</a>
+                    <a href="Github.html">Git and GitHub</a>
+                    <a href="Android.html">Android Development</a>
+                    <a href="Angular.html">Angular</a>
+                    <a href="Practice.html">Practice Sites</a>
+                </div>
+            </li>
+            <li><a href="professionals.html" class="nav-link">Hear from the Professionals</a></li>
+            <li><a href="Progress.html" class="nav-link">Your Progress</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h1>RESUME</h1>
         <form method="POST" action="php2.php" enctype="multipart/form-data">
             <label for="resume">Please upload resume:</label>
             <input type="file" name="documents" id="documents" accept=".jpg, .png, .pdf" required>
             <pre><i>(Accepted formats: jpg, png, pdf)</i></p>
-            <button type="submit" name="submit" class="btn">submit
+            <button type="submit" name="submit" class="btn">Submit
 
             </button>
             <br><br>
@@ -162,7 +263,7 @@ button.btn2 a{
             if($insert==true)
             {
                 echo "<P>Resume Uploaded successfully</p>";
-                echo "<button class='btn2'><a href='#'>Back to Home</a></button>";
+                echo "<button class='btn2'><a href='home.html'>Back to Home</a></button>";
             }
             ?>
         </form>

@@ -47,15 +47,11 @@ if(isset($_POST['title'])){
             background-color: #f2f2f2;
             margin: 0;
             padding: 0;
+            background-image:url('image1.avif');
+            background-repeat:no-repeat;
+            background-size:100%;
         }
-        form {
-            max-width: 500px;
-            margin: 50px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+
         input[type="text"],
         textarea {
             width: 100%;
@@ -175,6 +171,17 @@ if(isset($_POST['title'])){
 .dropdown:hover .dropdown-content {
     display: block;
 }
+form{
+    max-width: 530px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    padding-top: 90px;
+    box-sizing: border-box;
+}
 
 
 </style>
@@ -183,6 +190,8 @@ if(isset($_POST['title'])){
 
 <nav class="main-nav">
         <ul>
+        <li><a href="home.html" class="nav-link">Home</a></li>
+        <li><a href="php2.php" class="nav-link">Upload Resume</a></li>
             <li class="dropdown">
                 <a href="#" class="nav-link">Jobs</a>
                 <div class="dropdown-content">
@@ -214,6 +223,7 @@ if(isset($_POST['title'])){
         </ul>
     </nav>
     <form action="jobpost.php" method="POST">
+    <h1>Post Your Job:</h1>
         <input type="text" name="title" placeholder="Enter title"><br>
         <textarea name="content" placeholder="Enter content"></textarea><br>
         <input type="submit" value="Submit">

@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verify password
         if ($password == $row['password']){
             // Login success
-            header("Location: homeloggedin.html");
+            header("Location: createnewincluded.html");
             exit();
         } else {
             // Login failed - redirect to invalid login page
