@@ -32,7 +32,7 @@ $result = $con->query($sql);
   <title>Jobxa - User Profile</title>
  <link rel="stylesheet" href="profile.css">
  <style>
-  /* Navigation styles */
+ /* Navigation styles */
 .main-nav {
     background-color: #3C3C3C; /* Dark gray for navigation */
     color: #FFFFFF;
@@ -85,80 +85,51 @@ $result = $con->query($sql);
 .dropdown:hover .dropdown-content {
     display: block;
 }
-  body{
-    background-image:('sandesh.png');
-    background-repeat:no-repeat;
-    background-size:100%;
-  }
-   .profile-container {
+
+body {
+    background-image: url('sandesh.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.profile-container {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
-    margin-bottom: 20px;
-    display: inline-block;
+    margin: 20px auto;
+    display: block;
     background-color: rebeccapurple;
-    width: 700px;
-    align-content:center;
-}
-/* Navigation styles */
-.main-nav {
-    background-color: #3C3C3C; /* Dark gray for navigation */
-    color: #FFFFFF;
-    padding: 10px 0;
+    width: 500px; /* Adjusted width for a smaller profile box */
+    color: black;
+    margin-left: 720px;
 }
 
-.main-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+.profile-info h2,
+.profile-details h2 {
+    color: black; /* Gold color for headings to make them stand out */
 }
 
-.main-nav ul li {
-    position: relative;
-    margin: 0 15px;
+.profile-details ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-.nav-link {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
+.profile-details li {
+    background-color: #663399; /* Slightly lighter purple for skill items */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 3px;
 }
-
-.nav-link:hover {
-    text-decoration: underline;
-}
-
-/* Dropdown Menu */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #1E1E1E; /* Dark background */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: #FFFFFF;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #3600B4; /* Vivid violet-blue for hover */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+.profileinfo{
+    color:black;
 }
 </style>
 </head>
 
 <body>
   <header>
-    <img src="logo.png" alt="Job xa Logo"> <nav>
       <ul>
       <nav class="main-nav">
         <ul>
